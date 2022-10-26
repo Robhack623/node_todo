@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rob's To-Do App</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <h2 style = "font-size: 10px; float:right">Copyright 2022 Rob Hackett</h2>
+    <h1>Todo List</h1>
+    <p>Enter task: </p>
+    <input class = "todoTextBox" id = "todoTextBox" type = "text" onkeyup="success()" placeholder="Task description" style = "font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" />
+    <input class = "todoTextBox" id = "priority" type = "text" onkeyup="success()" placeholder="Priority: High/Medium/Low" style = "font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" />
+    <input class = "todoTextBox" id = "dateCreated" type = "text" onkeyup="success()" placeholder="Date: DD/MM" style = "font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" />
+    <button class = "addButton" id = "addButton">Add</button>
+
+    <h2>Tasks To Do</h2>
+        <ul id = "pendingTasks">
+
+        </ul>
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
